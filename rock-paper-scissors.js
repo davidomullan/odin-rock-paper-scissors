@@ -1,10 +1,10 @@
 // Round of Rock Paper Scissors
 function round() {
-	let userChoise, botChoise;
+	let userChoice, botChoice;
 
 	while(true){
-		userChoise = prompt("Rock=1, Paper=2, Scissors=3. UserChoise: ");
-		if (userChoise == 1 || userChoise == 2 || userChoise ==3){
+		userChoice = prompt("Rock 🪨 = 1, Paper 📰 = 2, Scissors ✄ = 3. \nEnter your choice: ");
+		if (userChoice == 1 || userChoice == 2 || userChoice ==3){
 			break;
 		}
 		else {
@@ -14,47 +14,47 @@ function round() {
 
 	// Bot selection between 1 and 3 inclusive
 	// Rock=1, Paper=2, Scissors=3
-	botChoise = Math.floor((Math.random() * 3)) + 1;
+	botChoice = Math.floor((Math.random() * 3)) + 1;
 
-	if (userChoise==1){
-		if (botChoise==2){
-			alert("User chose Rock | Bot chose Paper");
+	if (userChoice==1){
+		if (botChoice==2){
+			alert("User 🪨 | 📰 Bot");
 			return "bot";
 		}
-		else if (botChoise==3){
-			alert("User chose Rock | Bot chose Scissors");
+		else if (botChoice==3){
+			alert("User 🪨 | ✄ Bot");
 			return "user";
 		}
 		else {
-			alert("Both chose Rock");
+			alert("Both chose 🪨");
 			return "draw";
 		}
 	}
-	else if (userChoise==2){
-		if (botChoise==3){
-			alert("User chose Paper | Bot chose Scissors");
+	else if (userChoice==2){
+		if (botChoice==3){
+			alert("User 📰 | ✄ Bot");
 			return "bot";
 		}
-		else if (botChoise==1){
-			alert("User chose Paper | Bot chose Rock");
+		else if (botChoice==1){
+			alert("User 📰 | 🪨 Bot");
 			return "user";
 		}
 		else {
-			alert("Both chose Paper");
+			alert("Both chose 📰");
 			return "draw";
 		}
 	}
 	else {
-		if (botChoise==1){
-			alert("User chose Scissors | Bot chose Rock");
+		if (botChoice==1){
+			alert("User ✄ | 🪨 Bot");
 			return "bot";
 		}
-		else if (botChoise==2){
-			alert("User chose Scissors | Bot chose Paper");
+		else if (botChoice==2){
+			alert("User ✄ | 📰 Bot");
 			return "user";
 		}
 		else {
-			alert("Both chose Scissors");
+			alert("Both chose ✄");
 			return "draw";
 		}
 	}
@@ -72,7 +72,7 @@ function game(){
 		else if(result=="bot"){
 			botScore++;
 		}
-		alert(`User: ${userScore}, Bot: ${botScore}`);
+		alert(`User Score: ${userScore}, Bot Score: ${botScore}`);
 	}
 
 	if (userScore > botScore){
