@@ -8,10 +8,46 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+	<header>
+		<div class="rpsImage">
+			<img src="images/rock-paper-scissors.svg">
+		</div>
+		<h1>Rock, Paper, Scissors <span>*Shoot!*</span></h1>
+	</header>
 
-	<div class="button-div">
-		<button onclick="game()">Play game!</button>
+	<div class="content">
+
+		<div class="contentArea playerArea">
+			<div class="score playerScore">
+				<h3>Player Score:</h3>
+				<h3 id="playerScore">0</h3>
+			</div>
+			<div class="choice playerChoice">
+				<button id="playerRock" class="rock" onclick="round(1)">Rock</button>
+				<button id="playerPaper" class="paper" onclick="round(2)">Paper</button>
+				<button id="playerScissors" class="scissors" onclick="round(3)">Scissors</button>
+			</div>
+		</div>
+		<div class="contentArea botArea">
+			<div class="score botScore">
+				<h3>Bot Score:</h3>
+				<h3 id="botScore">0</h3>
+			</div>
+			<div class="choice botChoice">
+				<button id="botRock" class="rock">Rock</button>
+				<button id="botPaper" class="paper">Paper</button>
+				<button id="botScissors" class="scissors">Scissors</button>
+			</div>
+		</div>
 	</div>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.linkedin.com/in/david-omullan" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/davidomullan" target="_blank">GitHub</a></li>
+			<li><a href="https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors" target="_blank">The Odin Project</a></li>
+		</ul>
+	</footer>
 
 </body>
 </html>

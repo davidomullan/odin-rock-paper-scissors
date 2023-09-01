@@ -1,24 +1,126 @@
+/* General Styling */
+html {
+	font-family: helvetica, sans-serif;
+}
+
 body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+	color: black;
+}
+
+button {
+	background-color: #C63D2F;
+	border-radius: 15px;
+	border: 3px solid #E25E3E;
+	color: white;
+	font-size: 50px;
+}
+
+/* HEADER */
+header {
+	align-items: center;
+	background-color: #C63D2F;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+header > h1 {
+	padding-right: 20px;
+}
+
+.rpsImage {
+	align-items: center;
+/*	background-color: #FFBB5C;*/
+	justify-content: center;
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
 
-.button-div {
-	flex-grow: 1;
-	width: 100vw;
-	height: 100vh;
-	background-color: lightcoral;
+.rpsImage > img {
+	background-color: #E25E3E;
+/*	border-radius: 10px;*/
+	height: 10vh;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
 
-	display: flex;
+/* CONTENT */
+.content {
 	align-items: center;
+	background-color: #FFBB5C;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 2;
+	gap: 80px;
+	padding: 10px;
 	justify-content: center;
 }
 
-button {
-	font-family: helvetica, sans-serif;
-	font-size: 100px;
-	border: 5px solid blue;
+.contentArea {
+	background-color: #FF9B50;
+	border-radius: 10px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.score {
+	display: flex;
+	gap: 10px;
+}
+
+.choice {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: center;
+}
+
+/* FOOTER */
+footer {
+	align-items: center;
+	background-color: #FF9B50;
+	display: flex;
+	justify-content: center;
+}
+
+footer > ul {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	list-style: none;
+	padding-left: 0;
+}
+
+/* HIGHLIGHTING */
+span {
+	color: white;
+	font-style: italic;
+	font-weight: 900;
+}
+
+.selected {
+	background-color: white;
 	border-radius: 15px;
-	background-color: lightblue;
+	border: 3px solid #C63D2F;
+	color: #C63D2F;
+	scale: 1.01;
+	transition: all 0.1s;
 }
