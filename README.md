@@ -3,7 +3,7 @@
 - Guidelines: [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
 ## Implementation
-Currently played through alerts. Will update in future with GUI.
+Currently played through simple button GUI. Winner announced through alert.
 
 ## Rules
 1. Player chooses either: Rock, Paper, or Scissors
